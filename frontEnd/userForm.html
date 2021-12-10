@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: #32BEC2;" >Formulario de Usuario</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="css/registrar.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="userForm" class="form " action="" method="post">
+                        <h3 class="text-center" style="color: #32BEC2">Formulario de usuario</h3>
+                        <div class="form-group">
+                            <label for="identificationUser" style="color: #32BEC2">Número de Identificación:</label><br />
+                            <input type="number" name="identificationUser" id="identificationUser" class="form-control"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="nameUser" style="color: #32BEC2">Nombre</label><br/>
+                            <input type="text" name="nameUser" id="nameUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="addressUser" style="color: #32BEC2">Dirección</label><br>
+                            <input type="text" name="addressUser" id="addressUser"class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cellPhoneUser" style="color: #32BEC2">Celular</label><br>
+                            <input type="number" name="cellPhone" id="cellphoneUser"  class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailUser" style="color: #32BEC2">E-mail</label>
+                            <input type="email" name="emailUser" id="emailUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordUser" style="color: #32BEC2">Clave</label><br>
+                            <input type="password" name="passwordUser" id="passwordUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zoneUser" style="color: #32BEC2">Zona Asignada</label><br>
+                            <input type="text" name="zoneUser" id="zoneUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="typeUser" style="color: #32BEC2">Tipo Usuario</label><br>
+                            <select name="typeUser" id="typeUser"class="form-control" required>
+                                <option selected value="">Selecciona tipo de usuario</option> 
+                                <option value="coordinadorZona">Coordinador de zona</option>
+                                <option value="asesorComercial">Asesor Comercial</option>                                                             
+                              </select >                            
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <input type="submit" name="guardaeDatos" class="btn btn-dark btn-md" value="Guardar" onclick=""/>  
+            <input class="btn btn-dark btn-md" value="Cancelar" onclick=""/>                               
+        </div>
+       
+       </form>
+    </div>
+</body>
+
+</html>
